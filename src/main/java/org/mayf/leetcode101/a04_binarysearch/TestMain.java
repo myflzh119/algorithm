@@ -6,7 +6,7 @@ package org.mayf.leetcode101.a04_binarysearch;
  */
 public class TestMain {
     /**
-     * f(x) = x + n
-     * f(x) - x = n
+     * mid = (left+mid)/2
+     * mid = (mid+right)/2
      */
 }

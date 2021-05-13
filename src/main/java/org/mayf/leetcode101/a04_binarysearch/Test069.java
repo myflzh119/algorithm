@@ -10,8 +10,8 @@ package org.mayf.leetcode101.a04_binarysearch;
 public class Test069 {
 
     public static void main(String[] args) {
-        System.out.println((int)Math.sqrt(156));
-//        System.out.println(mySqrt2(8));
+//        System.out.println((int)Math.sqrt(156));
+        System.out.println(mySqrt(156));
     }
 
     static int sqrt(int x){
@@ -29,7 +29,7 @@ public class Test069 {
         if (x==0)return 0;
         int r = x,l=1,mid,temp;
         while(l<=r){
-            mid = l+(r-l)/2;
+            mid = (l+r)/2;
             temp = x/mid;
             if (temp==mid)return temp;
             else if (temp>mid)l=mid+1;
